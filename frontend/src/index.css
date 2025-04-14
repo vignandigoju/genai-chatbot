@@ -1,0 +1,26 @@
+/* Add the necessary Tailwind CSS for animations */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* This is for the animation's initial state */
+  .animate__animated {
+    animation-duration: 1s;
+  }
+  .animate__fadeInUp {
+    animation-name: fadeInUp;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
